@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title> test</title>
+</head>
+<body>
+  <script>
+// How to shallow copy in nested 
+//  Object value with Javascript inbuilt method.
+    const user = {
+      name: 'David',
+      phone: 122345678,
+      location: {
+        city: 'Edinburgh',
+        country: 'UK',
+        address: {
+          Street: "130 Dundee Street",
+          Postal: "EH11 1AF"
+        }
+      }
+    };
+    const myShallowCopy = structuredClone(user);
+    myShallowCopy.location.address.Street = "150 Avenue";
+    console.log(user)
+    console.log(myShallowCopy)
+  </script>
+</body>
+</html>
