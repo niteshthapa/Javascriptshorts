@@ -6,3 +6,5 @@ When the page is loaded, the browser will only load the placeholder image. As th
 lazy Loading for images with loading attribute.[Watch Demo](https://stackblitz.com/edit/web-platform-drtwi7?file=index.html){:target="_blank"}
 
 
+Click [here](https://www.geeksforgeeks.org/){:target="_blank"} 
+to visit GeeksForGeeks website.
