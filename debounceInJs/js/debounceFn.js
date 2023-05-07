@@ -1,12 +1,9 @@
 const debounce = (fn, delay) => {
-  let flag = true;
+  let clearIntervalID;
   return function (...args) {
-    if (flag) {
-      flag = false;
-      setTimeout(() => {
-        flag = true;
-        return fn(...args);
-      }, delay);
-    }
+    clearInterval(clearIntervalID);
+    clearIntervalID = setTimeout(() => {
+      return fn(...args);
+    }, delay);
   };
 };
